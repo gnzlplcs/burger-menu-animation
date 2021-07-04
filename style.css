@@ -75,7 +75,7 @@
   z-index: 1;
   left: 100px;
   transition: all .5s ease-in-out;
-  transition-delay: .5s;
+  transition-delay: 1s;
 }
 
 .menu-btn.open .menu-btn__burger {
@@ -93,6 +93,27 @@
   transform: rotate(-45deg) translate(35px, 35px);
 }
 
+.menu-btn.open:hover .menu-btn__burger::before,
+.menu-btn.open:hover .menu-btn__burger::after {
+  background-color: aqua;
+}
+
 .nav-sidebar {
   margin-top: 150px;
+}
+
+.nav-sidebar a {
+  margin-left: 20px;
+  line-height: 2;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.nav-sidebar a:hover {
+  color: aqua;
+}
+
+.main-content {
+  margin-left: 100px;
 }
